@@ -14,11 +14,11 @@ app.use(helmet());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.json({ message: 'Bine ai venit la API-ul pentru analiza afacerilor!' });
+  res.json({ message: 'Server is running!' });
 });
 
 app.listen(port, () => {
-  console.log(`Serverul rulează la http://localhost:${port}`);
+  console.log(`Server listening to http://localhost:${port}`);
 });
 
 export default app;
