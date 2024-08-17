@@ -13,12 +13,10 @@ app.use(cors());
 app.use(helmet());
 app.use(express.json());
 
-// Rută de test
 app.get('/', (req, res) => {
   res.json({ message: 'Bine ai venit la API-ul pentru analiza afacerilor!' });
 });
 
-// Pornirea serverului
 app.listen(port, () => {
   console.log(`Serverul rulează la http://localhost:${port}`);
 });
